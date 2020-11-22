@@ -1,25 +1,36 @@
 import React from 'react';
 import logo from './logo.svg';
+import DnD from './components/DragAndDrop/DnD';
 import './App.css';
+import NavMenu from './components/NavMenu/NavMenu'
+
+
+
+let dragZones = [
+  {category: "Fruits", items: 0},
+  {category: "Legumes", items: 0},
+  {category: "Personnage de manga", items: 0}
+];
+
+let element = [
+  {title: "Peach", category: "Fruits", link: true},
+  {title: "Banana", category: "Fruits", link: true},
+  {title: "Leek", category: "Legumes", link: true},
+  {title: "Naruto", category: "None", link: true},
+  {title: "Gon", category: "Personnage de manga", link: true}
+  ];
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <NavMenu link="https://www.google.fr" name="header menu"/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <DnD dragZones={dragZones} 
+               element={element}/>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-    </div>
+   </div>
   );
 }
 
