@@ -1,0 +1,25 @@
+.Fruits {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/610krQts8ZL._AC_SX679_.jpg");
+    background-size: cover;
+    color: black;
+    
+}
+
+.Legumes {
+    background-image: url("https://observatoireprevention.org/wp-content/uploads/2017/05/iStock-589415708-1080x675.jpg");
+    background-size: cover;
+    color: White;
+}
+
+.PersonnageDeManga {
+    background-image: url("");
+    color: green;
+    
+}
+
+.drop {
+    border: 1px solid #999;
+    display: block;
+    margin: 10px;
+    padding: 0px 100px 100px 0px;
+}
